@@ -1,0 +1,7 @@
+Class NewsRepositoryTests {
+    public function ItCanReturnAllTheNewsItems() {
+    }
+
+    public function ItReturnsAnEmptyCollectionIfThereAreNoItems() {
+    }
+}
