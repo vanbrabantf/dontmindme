@@ -1,3 +1,5 @@
 class NewsRepository {
-    
+    public function getAll() {
+        return Database.sql("select * from news");
+    }
 }
