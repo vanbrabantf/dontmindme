@@ -1,0 +1,7 @@
+class NewsController {
+    public function index() {
+        var items = Database.sql("select * from news");
+
+        return NewsView.withItem(items);
+    }
+}
