@@ -1,5 +1,10 @@
 class NewsRepository {
+
+    private function executeQuery(query) {
+        return Database.sql(query);
+    }
+
     public function getAll() {
-        return Database.sql("select * from news");
+        return this.executeQuery("select * from news");
     }
 }
