@@ -1,7 +1,14 @@
 Class NewsRepositoryTests {
     public function ItCanReturnAllTheNewsItems() {
+        this.createNewsPosts(5);
+        var repository = new NewsRepository();
+
+        this.assertCount(5, repository.getAll())
     }
 
     public function ItReturnsAnEmptyCollectionIfThereAreNoItems() {
+        var repository = new NewsRepository();
+
+        this.assertEmpty(repository.getAll())
     }
 }
